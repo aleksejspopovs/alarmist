@@ -36,7 +36,7 @@ Everything else, obviously, depends on the UI you are using. WXTaskbarUI should 
 
 ![WXTaskbarUI screenshot](http://s1.hostingkartinok.com/uploads/images/2012/02/34d517876f0a56f91525a97d0ab64484.png)
 
-The big rectangle on the left display the current state of Alarmist (red means unarmed, green means armed). The smaller rectangle on the right is a 'panic meter' that fills with red when the sensor is reporting danger (the speed at which it fills up is defined by the timeout variable in `config.py`). Double-clicking the icon or using the hotkey you defined in `config.py` will toggle the state of Alarmist, right-clicking the icon will open the menu that allows you to either toggle the state of Alarmist (again!) or exit Alarmist.
+The big rectangle on the left displays the current state of Alarmist (red means unarmed, green means armed). The smaller rectangle on the right is a 'panic meter' that fills with red when the sensor is reporting danger (the speed at which it fills up is defined by the timeout variable in `config.py`). Double-clicking the icon or using the hotkey you defined in `config.py` will toggle the state of Alarmist, right-clicking the icon will open the menu that allows you to either toggle the state of Alarmist (again!) or exit Alarmist.
 
 Contributing to Alarmist
 ========================
