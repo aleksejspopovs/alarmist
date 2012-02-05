@@ -11,12 +11,12 @@ Details on inner workings
 Alarmist itself relies on three modules to work:
 
 - the *sensor* is responsible for notifying Alarmist whenever something weird is going on
-- - **ThinkPadShockSensor** is the only included sensor at the moment. It checks if your laptop is moving. Unfortunately, it only works on [ThinkPad laptops with accelerometers](http://www.thinkwiki.org/wiki/Active_Protection_System) and only supports 32-bit Python on Windows (although it is possible to port it to Linux)
+	- **ThinkPadShockSensor** is the only included sensor at the moment. It checks if your laptop is moving. Unfortunately, it only works on [ThinkPad laptops with accelerometers](http://www.thinkwiki.org/wiki/Active_Protection_System) and only supports 32-bit Python on Windows (although it is possible to port it to Linux)
 - the *panic manager* is responsible for quickly doing whatever you might want it to do whenever Alarmist tells it someting's wrong
-- - the only included panick manager is **CMDPanic**, which runs a specified application during panic events. CMDPanic supports any OS.
+	- the only included panick manager is **CMDPanic**, which runs a specified application during panic events. CMDPanic supports any OS.
 - the *user interface* is responsible for notifying you about what's going on and allowing you to temporarily turn Alarmist off
-- - one of the included UIs is **WXTaskbarUI**, which creates a nice icon in your taskbar and allows you to toggle Alarmist state by either double-clicking the icon or using the system-wide hotkey (which is Alt-F1 by default, but you're free to change it). As the name implies, WXTaskbarUI uses wxPython and therefore requires wxPython to be installed. Even though I didn't try to use WXTaskbarUI under any OS other than Windows, I believe it will work under any OS.
-- - the other is **ConsoleUI**. ConsoleUI is mainly for development purposes, although you're free to try it if you can't/don't want to use WXTaskbarUI for some reason.
+	- one of the included UIs is **WXTaskbarUI**, which creates a nice icon in your taskbar and allows you to toggle Alarmist state by either double-clicking the icon or using the system-wide hotkey (which is Alt-F1 by default, but you're free to change it). As the name implies, WXTaskbarUI uses wxPython and therefore requires wxPython to be installed. Even though I didn't try to use WXTaskbarUI under any OS other than Windows, I believe it will work under any OS.
+	- the other is **ConsoleUI**. ConsoleUI is mainly for development purposes, although you're free to try it if you can't/don't want to use WXTaskbarUI for some reason.
 
 More info on each module is available in it's corresponding .py file (e.g. ThinkPadShockSensor.py)
 
